@@ -1,0 +1,55 @@
+{
+  "name": "ultraswag-theme",
+  "publisher": "LadyRin",
+  "displayName": "UltraSwag Theme",
+  "description": "ඞ ඞ ඞ",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:ultraswag-theme.enableGlow",
+    "onCommand:ultraswag-theme.disableGlow"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "themes": [
+      {
+        "label": "UltraSwag",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ultraswag-color-theme.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "ultraswag-theme.enableGlow",
+        "title": "UltraSwag: Enable Glow"
+      },
+      {
+        "command": "ultraswag-theme.disableGlow",
+        "title": "UltraSwag: Disable Glow"
+      }
+    ],
+    "configuration": {
+			"title": "UltraSwag",
+			"properties": {
+				"ultraswag.brightness": {
+					"type": "number",
+					"default": 0.45,
+					"description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
+				},
+				"ultraswag.disableGlow": {
+					"type": "boolean",
+					"default": false,
+					"description": "Disable the glow effect, but show UltraSwag editor chrome updates"
+				}
+			}
+		}
+  },
+  "dependencies": {
+    "semver": "^7.3.8"
+  }
+}
