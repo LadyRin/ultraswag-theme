@@ -1,12 +1,16 @@
 {
   "name": "ultraswag-theme",
   "publisher": "LadyRin",
-  "icon": "https://raw.githubusercontent.com/LadyRin/ultraswag-theme/master/icon.png",
+  "icon": "icon.png",
   "displayName": "UltraSwag Theme",
   "description": "ඞ ඞ ඞ",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.73.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LadyRin/ultraswag-theme"
   },
   "categories": [
     "Other"
